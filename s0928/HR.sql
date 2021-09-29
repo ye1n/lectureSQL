@@ -1,3 +1,11 @@
+
+--부서별 직원 명부 출력
+
+SELECT d.department_id 부서번호, department_name 부서명, first_name 사원명
+    FROM departments d, employees e
+    WHERE d.department_id = e.department_id
+    ORDER BY 1 DESC;
+
 --right outer join 2가지 방법
 
 select d.department_id 부서번호, department_name 부서명, first_name 사원명
